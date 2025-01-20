@@ -1,5 +1,5 @@
 {% set name = "graphviz-anywidget" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 {% set python_min = "3.10" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/graphviz_anywidget-{{ version }}.tar.gz
-  sha256: 136eea9e99181c1095faca239e9a89168d157b076fc33315cc2c1413417013f1
+  sha256: 43e39fabb8232b53d6e742d176e301acb18d8a7b5605f875334927f2739942ae
 
 build:
   noarch: python
