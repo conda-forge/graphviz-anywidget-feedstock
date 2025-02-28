@@ -1,0 +1,47 @@
+schema_version: 1
+
+context:
+  name: graphviz-anywidget
+  version: 0.5.0
+  python_min: 3.10
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/graphviz_anywidget-${{ version }}.tar.gz
+  sha256: 29cc608a8f372046a02d6e23f7be9efcd639ee26caaab91c7d7f92d06f015c4c
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python 3.10.*
+    - hatchling
+    - hatch-vcs
+    - pip
+    - hatch-jupyter-builder
+  run:
+    - python >=${{ python_min }}
+    - anywidget
+
+tests:
+  - python:
+      imports:
+        - graphviz_anywidget
+      pip_check: true
+
+      python_version: ${{ python_min }}.*
+about:
+  summary: Interactive Graphviz visualization widget for Jupyter notebooks using anywidget using Wasm (WebAssembly).
+  license: MIT
+  license_file: LICENSE
+  homepage: https://github.com/pipefunc/graphviz-anywidget
+
+extra:
+  recipe-maintainers:
+    - basnijholt
