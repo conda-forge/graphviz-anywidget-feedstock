@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: graphviz-anywidget
-  version: 0.5.0
+  version: 0.6.0
   python_min: 3.10
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/graphviz_anywidget-${{ version }}.tar.gz
-  sha256: 29cc608a8f372046a02d6e23f7be9efcd639ee26caaab91c7d7f92d06f015c4c
+  sha256: 2247e12d8d8e139b6777104a9ffdb96759a4010d7cee601ea7d6220683238559
 
 build:
   number: 1
