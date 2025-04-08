@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: graphviz-anywidget
-  version: 0.6.0
+  version: 0.7.0
   python_min: 3.10
 
 package:
@@ -14,7 +14,7 @@ source:
   sha256: 2247e12d8d8e139b6777104a9ffdb96759a4010d7cee601ea7d6220683238559
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
