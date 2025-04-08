@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/graphviz_anywidget-${{ version }}.tar.gz
-  sha256: 2247e12d8d8e139b6777104a9ffdb96759a4010d7cee601ea7d6220683238559
+  sha256: 3c1b235f3445c3b0f70a7017407d65dfb2821d1caa4282d8d73d75b4361aebbf
 
 build:
   number: 0
